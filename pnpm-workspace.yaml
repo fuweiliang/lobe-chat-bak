@@ -94,3 +94,9 @@ patchedDependencies:
   '@upstash/qstash': patches/@upstash__qstash.patch
   micromark@4.0.3: patches/micromark@4.0.3.patch
   micromark-extension-gfm-autolink-literal@2.1.0: patches/micromark-extension-gfm-autolink-literal@2.1.0.patch
+
+# Required by the OpenAPI adapter during Next.js bundling.
+packageExtensions:
+  '@standard-community/standard-openapi@0.2.11':
+    dependencies:
+      zod-openapi: 4.2.4
