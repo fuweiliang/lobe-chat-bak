@@ -5,11 +5,6 @@ permissions:
   id-token: write
 
 on:
-  push:
-    branches:
-      - canary
-    paths:
-      - packages/sdk/**
   workflow_dispatch: {}
 
 concurrency:

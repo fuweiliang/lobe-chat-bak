@@ -4,11 +4,7 @@ permissions:
   contents: write
 
 on:
-  pull_request_target:
-    types: [closed]
-    branches:
-      - main
-
+  workflow_dispatch: {}
 jobs:
   auto-tag:
     name: Auto Tag Release

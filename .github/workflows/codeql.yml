@@ -13,10 +13,6 @@ name: CodeQL
 #     -f state=not-configured
 
 on:
-  schedule:
-    # Mondays at 04:27 UTC.
-    - cron: '27 4 * * 1'
-  # Lets anyone re-run the scan on demand without waiting for the schedule.
   workflow_dispatch:
 
 concurrency:

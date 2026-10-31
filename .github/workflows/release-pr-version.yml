@@ -1,11 +1,7 @@
 name: Release PR Version
 
 on:
-  pull_request:
-    types: [opened, edited, synchronize, reopened]
-    branches:
-      - main
-
+  workflow_dispatch: {}
 permissions:
   contents: write
 

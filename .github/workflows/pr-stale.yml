@@ -8,8 +8,6 @@ name: Close Stale PRs
 # Runs in dry-run mode (logs candidates only) until the repository variable
 # PR_STALE_ENABLED is set to `true`, so the first runs can be reviewed before anything closes.
 on:
-  schedule:
-    - cron: '17 3 * * *'
   workflow_dispatch: {}
 
 concurrency:

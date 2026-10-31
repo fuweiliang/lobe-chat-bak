@@ -3,13 +3,7 @@ permissions:
   contents: read
 
 on:
-  push:
-    branches:
-      - main
-      - next
-    paths:
-      - 'docs/**'
-
+  workflow_dispatch: {}
 jobs:
   revalidate:
     name: Revalidate Docs

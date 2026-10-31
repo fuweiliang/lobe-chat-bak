@@ -21,8 +21,6 @@ name: Release Desktop Stable
 # ============================================
 
 on:
-  release:
-    types: [published]
   workflow_dispatch:
     inputs:
       version:

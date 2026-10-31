@@ -3,12 +3,7 @@ permissions:
   contents: read
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'docs/development/database-schema.dbml'
-
+  workflow_dispatch: {}
 jobs:
   build:
     runs-on: ubuntu-latest

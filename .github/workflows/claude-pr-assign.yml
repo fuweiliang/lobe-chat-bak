@@ -1,9 +1,7 @@
 name: Claude PR Assign
 
 on:
-  pull_request_target:
-    types: [opened, labeled]
-
+  workflow_dispatch: {}
 jobs:
   assign-reviewer:
     runs-on: ubuntu-latest

@@ -5,9 +5,7 @@ name: PR Admission Check
 # and comment on fork PRs; it never checks out or runs PR code — only the base branch's
 # script is loaded, and the title and body are read from the event payload.
 on:
-  pull_request_target:
-    types: [opened, edited, reopened, ready_for_review]
-
+  workflow_dispatch: {}
 concurrency:
   group: pr-admission-check-${{ github.event.pull_request.number }}
   cancel-in-progress: true

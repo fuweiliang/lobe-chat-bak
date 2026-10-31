@@ -1,8 +1,7 @@
 name: Verify Workbench
 
 on:
-  pull_request: {}
-
+  workflow_dispatch: {}
 permissions:
   actions: read
   contents: read
